@@ -4,7 +4,6 @@ Full_Time=1
 Part_Time=2
 Wage_per_hr=20
 Working_days=22
-salary=0
 
 for (( days=1; days<=$Working_days; days++ ))
 do
@@ -20,6 +19,5 @@ do
 	fi
 
 	Emp_Wages=$(( $emphrs * $Wage_per_hr ))
-	salary=$(($salary + $Emp_Wages))
 done
-echo "Employees Salary: $salary"
+echo "Employees Daily Wage: $Emp_Wages"
