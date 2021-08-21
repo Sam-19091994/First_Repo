@@ -8,7 +8,7 @@ do
 	if [ $randNo -eq $n ]
 	then
 		echo "Employee is present"
-		$((attendance+=1))
+		attendance=$((attendance + 1))
 	else
 		echo "Employee is absent"
 	fi
