@@ -7,7 +7,7 @@ Working_days=20
 salary=0
 Total_hrs=0
 
-for (( days=emphrs=1; days<=$Working_days && emphrs<=100; days++,emphrs++ ))
+for (( days=1; days<=$Working_days; days++ ))
 do
    Empl_check=$((RANDOM%3));
    if [ $Empl_check -eq $Full_Time ]
